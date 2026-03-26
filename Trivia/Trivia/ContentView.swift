@@ -8,17 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = TriviaViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+    OptionView()
     }
-}
-
-#Preview {
-    ContentView()
 }
